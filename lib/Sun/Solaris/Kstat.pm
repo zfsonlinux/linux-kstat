@@ -55,7 +55,7 @@ sub update {
     my @files = readdir(MODDIR);
     my $file;
     foreach $file (@files) {
-      if ($file eq "." || $file eq "..") {
+      if ($file eq "." || $file eq ".." || $file eq "dbufs") {
         next;
       }
 
